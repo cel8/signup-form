@@ -5,13 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-Up Form</title>
-  <style href="./stylesheet/normalize.css" rel="stylesheet"></style>
-  <style href="./stylesheet/style.css" rel="stylesheet"></style>
+  <link href="./stylesheet/normalize.css" rel="stylesheet"></style>
+  <link href="./stylesheet/style.css" rel="stylesheet"></style>
+  <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./resources/images/site.ico"/>
 </head>
 <body>
-  <head></head>  
-  <main></main>
-  <footer></footer>
+  <head></head>
+  <main>
+    <div class="bg-container">
+      <div class="logo-container">
+        <img src="./resources/images/odin-lined.png" alt="odin-logo">
+        <div>ODIN</div>
+      </div>
+      <div>Photo by <a href="https://unsplash.com/@rolandtheo">Théo Roland</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+    </div>
+    <div class="form-container">
+      <div class="firstElement">
+        <p>This is not a real online service! You know you need something like this in your life to help you releaze your deepest dreams.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="centerElement">
+        <p>Let's do this!</p>
+        <form class="form-grid" action="./index.html" method="post">
+          <div class="grid-elem">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName">
+            <div class="firstName-alert"></div>
+          </div>
+          <div class="grid-elem">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName">
+            <div class="lastName-alert"></div>
+          </div>
+          <div class="grid-elem">
+            <label for="email">EMAIL</label>
+            <input type="email" id="mail">
+            <div class="email-alert"></div>
+          </div>
+          <div class="grid-elem">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="number" id="phoneNumber">
+            <div class="phoneNumber-alert"></div>
+          </div>
+          <div class="grid-elem">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password">
+            <div class="password-alert"></div>
+          </div>
+          <div class="grid-elem">
+            <label for="password">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPassword">
+          </div>
+        </form>
+      </div>
+      <div class="lastElement">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="./index.html">Log in</a></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright © 2022 Alessandro Celotti</p>
+    <a href="https://github.com/cel8" target="_blank"><i class="fab fa-github"></i></a>
+  </footer>
 </body>
 <script src="./script/script.js"></script>
 </html>
