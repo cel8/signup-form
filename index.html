@@ -27,42 +27,50 @@
         <p>You <em>know</em> you want to.</p>
       </div>
       <div class="centerElement">
-        <p>Let's do this!</p>
-        <form class="form-grid" action="./index.html" method="post">
-          <div class="grid-elem">
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName">
-            <div class="firstName-alert"></div>
+        <form action="./index.html" method="post">
+          <div class="stretchElement">
+            <p>Let's do this!</p>
+            <div class="form-grid">
+              <div class="grid-elem">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div data-key="firstName" class="alert"></div>
+              </div>
+              <div class="grid-elem">
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div data-key="lastName" class="alert"></div>
+              </div>
+              <div class="grid-elem">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+                <div data-key="email" class="alert"></div>
+              </div>
+              <div class="grid-elem">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+                <div data-key="phoneNumber" class="alert"></div>
+              </div>
+              <div class="grid-elem">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required>
+                <div data-key="password" class="alert"></div>
+              </div>
+              <div class="grid-elem">
+                <label for="password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirmPassword" required>
+              </div>
+              <div class="grid-elem">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Show password</label>
+              </div>
+            </div>
           </div>
-          <div class="grid-elem">
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName">
-            <div class="lastName-alert"></div>
-          </div>
-          <div class="grid-elem">
-            <label for="email">EMAIL</label>
-            <input type="email" id="mail">
-            <div class="email-alert"></div>
-          </div>
-          <div class="grid-elem">
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="number" id="phoneNumber">
-            <div class="phoneNumber-alert"></div>
-          </div>
-          <div class="grid-elem">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password">
-            <div class="password-alert"></div>
-          </div>
-          <div class="grid-elem">
-            <label for="password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirmPassword">
+          <div class="lastElement">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="./index.html">Log in</a></p>
           </div>
         </form>
-      </div>
-      <div class="lastElement">
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="./index.html">Log in</a></p>
       </div>
     </div>
   </main>

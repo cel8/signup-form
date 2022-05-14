@@ -39,6 +39,12 @@ a {
 }
 
 .centerElement {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.stretchElement {
   padding: 50px;
   align-self: stretch;
   border: 1px solid gray
@@ -61,6 +67,11 @@ a {
   gap: 2px;
 }
 
+.grid-elem:last-of-type {
+  flex-direction: row;
+  gap: 5px;
+}
+
 footer {
   justify-content: center;
   align-self: center;
@@ -69,3 +80,28 @@ footer {
   font-size: 18px;
   display: flex;
 }
+
+input {
+  border: #E5E7EB solid 1px;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border: rgb(185, 28, 28) solid 1px;
+}
+
+input:valid {
+  border: rgb(89, 109, 72) solid 1px;
+}
+
+input:focus {
+  border: rgb(29, 78, 216) solid 1px;
+  outline: none;
+}
+
+.alert {
+  font-size: 12px;
+  color: rgb(185, 28, 28);
+}
+
+
