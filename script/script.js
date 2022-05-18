@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll('input');
 const showPassword = document.querySelector('#showPassword');
+const formElement = document.querySelector('form');
 
 const patterns = {
   phoneNumber: /^\d{12}$/,
@@ -91,3 +92,7 @@ showPassword.addEventListener('click', (e) => {
   password.type = password.type === 'password' ? 'text' : 'password';
   confirmPassword.type = confirmPassword.type === 'password' ? 'text' : 'password';
 })
+
+formElement.addEventListener('invalid', (e) => {
+  e.preventDefault();
+}, true);

@@ -89,6 +89,7 @@ form > :first-child {
   align-self: stretch;
   border: 1px solid white;
   background-color: white;
+  box-shadow: 0rem 0.5rem 0.9rem rgba(0,0,0,0.2);
 }
 
 form > :last-child {
@@ -130,20 +131,21 @@ label {
 }
 
 input {
-  border: #E5E7EB solid 1px;
-  border-radius: 5px;
+  border: #E5E7EB solid 0.1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0rem 0.5rem 0.9rem rgba(0,0,0,0.1);
 }
 
 input:invalid {
-  border: rgb(185, 28, 28) solid 1px;
+  border: rgb(185, 28, 28) solid 0.1rem;
 }
 
 input:valid {
-  border: rgb(89, 109, 72) solid 1px;
+  border: rgb(89, 109, 72) solid 0.1rem;
 }
 
 input:focus {
-  border: rgb(29, 78, 216) solid 1px;
+  border: rgb(29, 78, 216) solid 0.1rem;
   outline: none;
 }
 
@@ -151,6 +153,17 @@ input:focus {
   font-size: 12px;
   font-weight: normal;
   color: rgb(185, 28, 28);
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.5rem 0.9rem rgba(0,0,0,0.2);
+  border-width: 0rem;
 }
 
 footer {
